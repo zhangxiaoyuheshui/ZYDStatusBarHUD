@@ -80,8 +80,8 @@
 		2A13828A1F95E250009F33EC /* ZYDStatusBarHUD */ = {
 			isa = PBXGroup;
 			children = (
-				2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */,
 				2A13828C1F95E250009F33EC /* ZYDStatusBarHUD.h */,
+				2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */,
 				2A13828D1F95E250009F33EC /* ZYDStatusBarHUD.bundle */,
 			);
 			name = ZYDStatusBarHUD;

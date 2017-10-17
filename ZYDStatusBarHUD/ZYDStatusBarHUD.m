@@ -9,12 +9,12 @@
 #import "ZYDStatusBarHUD.h"
 
 
-#define XMGMessageFont [UIFont systemFontOfSize:12]
+#define ZYDMessageFont [UIFont systemFontOfSize:12]
 
 /** 消息的停留时间 */
-static CGFloat const XMGMessageDuration = 2.0;
+static CGFloat const ZYDMessageDuration = 2.0;
 /** 消息显示\隐藏的动画时间 */
-static CGFloat const XMGAnimationDuration = 0.25;
+static CGFloat const ZYDAnimationDuration = 0.25;
 
 @implementation ZYDStatusBarHUD
 
@@ -35,14 +35,14 @@ static NSTimer *timer_;
     // 显示窗口
     window_.hidden = YES;
     window_ = [[UIWindow alloc] init];
-    window_.backgroundColor = [UIColor blackColor];
+    window_.backgroundColor = [UIColor grayColor];
     window_.windowLevel = UIWindowLevelAlert;
     window_.frame = frame;
     window_.hidden = NO;
     
     // 动画
     frame.origin.y = 0;
-    [UIView animateWithDuration:XMGAnimationDuration animations:^{
+    [UIView animateWithDuration:ZYDAnimationDuration animations:^{
         window_.frame = frame;
     }];
 }
@@ -63,7 +63,7 @@ static NSTimer *timer_;
     // 添加按钮
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setTitle:msg forState:UIControlStateNormal];
-    button.titleLabel.font = XMGMessageFont;
+    button.titleLabel.font = ZYDMessageFont;
     if (image) { // 如果有图片
         [button setImage:image forState:UIControlStateNormal];
         button.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
@@ -72,7 +72,7 @@ static NSTimer *timer_;
     [window_ addSubview:button];
     
     // 定时器
-    timer_ = [NSTimer scheduledTimerWithTimeInterval:XMGMessageDuration target:self selector:@selector(hide) userInfo:nil repeats:NO];
+    timer_ = [NSTimer scheduledTimerWithTimeInterval:ZYDMessageDuration target:self selector:@selector(hide) userInfo:nil repeats:NO];
 }
 
 /**
@@ -89,7 +89,7 @@ static NSTimer *timer_;
 + (void)showSuccess:(NSString *)msg
 {
     NSLog(@"%@", NSTemporaryDirectory());
-    [self showMessage:msg image:[UIImage imageNamed:@"XMGStatusBarHUD.bundle/success"]];
+    [self showMessage:msg image:[UIImage imageNamed:@"ZYDStatusBarHUD.bundle/success"]];
 }
 
 /**
@@ -97,7 +97,7 @@ static NSTimer *timer_;
  */
 + (void)showError:(NSString *)msg
 {
-    [self showMessage:msg image:[UIImage imageNamed:@"XMGStatusBarHUD.bundle/error"]];
+    [self showMessage:msg image:[UIImage imageNamed:@"ZYDStatusBarHUD.bundle/error"]];
 }
 
 /**
@@ -114,7 +114,7 @@ static NSTimer *timer_;
     
     // 添加文字
     UILabel *label = [[UILabel alloc] init];
-    label.font = XMGMessageFont;
+    label.font = ZYDMessageFont;
     label.frame = window_.bounds;
     label.textAlignment = NSTextAlignmentCenter;
     label.text = msg;
@@ -125,7 +125,7 @@ static NSTimer *timer_;
     UIActivityIndicatorView *loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     [loadingView startAnimating];
     // 文字宽度
-    CGFloat msgW = [msg sizeWithAttributes:@{NSFontAttributeName : XMGMessageFont}].width;
+    CGFloat msgW = [msg sizeWithAttributes:@{NSFontAttributeName : ZYDMessageFont}].width;
     CGFloat centerX = (window_.frame.size.width - msgW) * 0.5 - 20;
     CGFloat centerY = window_.frame.size.height * 0.5;
     loadingView.center = CGPointMake(centerX, centerY);
@@ -137,7 +137,7 @@ static NSTimer *timer_;
  */
 + (void)hide
 {
-    [UIView animateWithDuration:XMGAnimationDuration animations:^{
+    [UIView animateWithDuration:ZYDAnimationDuration animations:^{
         CGRect frame = window_.frame;
         frame.origin.y =  - frame.size.height;
         window_.frame = frame;
