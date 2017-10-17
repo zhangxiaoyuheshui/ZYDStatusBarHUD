@@ -13,6 +13,8 @@
 		2A13827E1F95E1DA009F33EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A13827D1F95E1DA009F33EC /* Assets.xcassets */; };
 		2A1382811F95E1DA009F33EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A13827F1F95E1DA009F33EC /* LaunchScreen.storyboard */; };
 		2A1382841F95E1DA009F33EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1382831F95E1DA009F33EC /* main.m */; };
+		2A13828E1F95E250009F33EC /* ZYDStatusBarHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */; };
+		2A13828F1F95E250009F33EC /* ZYDStatusBarHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A13828D1F95E250009F33EC /* ZYDStatusBarHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		2A1382801F95E1DA009F33EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A1382821F95E1DA009F33EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1382831F95E1DA009F33EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDStatusBarHUD.m; sourceTree = "<group>"; };
+		2A13828C1F95E250009F33EC /* ZYDStatusBarHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDStatusBarHUD.h; sourceTree = "<group>"; };
+		2A13828D1F95E250009F33EC /* ZYDStatusBarHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYDStatusBarHUD.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		2A1382731F95E1DA009F33EC /* ZYDStatusBarHUDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2A13828A1F95E250009F33EC /* ZYDStatusBarHUD */,
 				2A1382741F95E1DA009F33EC /* AppDelegate.h */,
 				2A1382751F95E1DA009F33EC /* AppDelegate.m */,
 				2A1382771F95E1DA009F33EC /* ViewController.h */,
@@ -69,6 +75,17 @@
 				2A1382831F95E1DA009F33EC /* main.m */,
 			);
 			path = ZYDStatusBarHUDDemo;
+			sourceTree = "<group>";
+		};
+		2A13828A1F95E250009F33EC /* ZYDStatusBarHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */,
+				2A13828C1F95E250009F33EC /* ZYDStatusBarHUD.h */,
+				2A13828D1F95E250009F33EC /* ZYDStatusBarHUD.bundle */,
+			);
+			name = ZYDStatusBarHUD;
+			path = ../../ZYDStatusBarHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +149,7 @@
 				2A1382811F95E1DA009F33EC /* LaunchScreen.storyboard in Resources */,
 				2A13827E1F95E1DA009F33EC /* Assets.xcassets in Resources */,
 				2A13827C1F95E1DA009F33EC /* Main.storyboard in Resources */,
+				2A13828F1F95E250009F33EC /* ZYDStatusBarHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1382791F95E1DA009F33EC /* ViewController.m in Sources */,
+				2A13828E1F95E250009F33EC /* ZYDStatusBarHUD.m in Sources */,
 				2A1382841F95E1DA009F33EC /* main.m in Sources */,
 				2A1382761F95E1DA009F33EC /* AppDelegate.m in Sources */,
 			);

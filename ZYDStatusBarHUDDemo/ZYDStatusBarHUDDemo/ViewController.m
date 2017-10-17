@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZYDStatusBarHUD.h"
 
 @interface ViewController ()
 
