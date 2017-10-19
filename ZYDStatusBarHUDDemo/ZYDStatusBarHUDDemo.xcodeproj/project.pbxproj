@@ -14,7 +14,12 @@
 		2A1382811F95E1DA009F33EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A13827F1F95E1DA009F33EC /* LaunchScreen.storyboard */; };
 		2A1382841F95E1DA009F33EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1382831F95E1DA009F33EC /* main.m */; };
 		2A13828E1F95E250009F33EC /* ZYDStatusBarHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */; };
-		2A13828F1F95E250009F33EC /* ZYDStatusBarHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A13828D1F95E250009F33EC /* ZYDStatusBarHUD.bundle */; };
+		2AA4787D1F98574100E32442 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA478771F98574000E32442 /* error@2x.png */; };
+		2AA4787E1F98574100E32442 /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA478781F98574000E32442 /* success@2x.png */; };
+		2AA4787F1F98574100E32442 /* waveBPheart_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA478791F98574000E32442 /* waveBPheart_1.png */; };
+		2AA478801F98574100E32442 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4787A1F98574000E32442 /* error.png */; };
+		2AA478811F98574100E32442 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4787B1F98574000E32442 /* success.png */; };
+		2AA478821F98574100E32442 /* waveBPheart_1_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4787C1F98574000E32442 /* waveBPheart_1_ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +35,12 @@
 		2A1382831F95E1DA009F33EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDStatusBarHUD.m; sourceTree = "<group>"; };
 		2A13828C1F95E250009F33EC /* ZYDStatusBarHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDStatusBarHUD.h; sourceTree = "<group>"; };
-		2A13828D1F95E250009F33EC /* ZYDStatusBarHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYDStatusBarHUD.bundle; sourceTree = "<group>"; };
+		2AA478771F98574000E32442 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
+		2AA478781F98574000E32442 /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
+		2AA478791F98574000E32442 /* waveBPheart_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveBPheart_1.png; sourceTree = "<group>"; };
+		2AA4787A1F98574000E32442 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		2AA4787B1F98574000E32442 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		2AA4787C1F98574000E32442 /* waveBPheart_1_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveBPheart_1_ipad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +92,23 @@
 			children = (
 				2A13828C1F95E250009F33EC /* ZYDStatusBarHUD.h */,
 				2A13828B1F95E250009F33EC /* ZYDStatusBarHUD.m */,
-				2A13828D1F95E250009F33EC /* ZYDStatusBarHUD.bundle */,
+				2AA478761F98574000E32442 /* Images */,
 			);
 			name = ZYDStatusBarHUD;
 			path = ../../ZYDStatusBarHUD;
+			sourceTree = "<group>";
+		};
+		2AA478761F98574000E32442 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2AA478771F98574000E32442 /* error@2x.png */,
+				2AA478781F98574000E32442 /* success@2x.png */,
+				2AA478791F98574000E32442 /* waveBPheart_1.png */,
+				2AA4787A1F98574000E32442 /* error.png */,
+				2AA4787B1F98574000E32442 /* success.png */,
+				2AA4787C1F98574000E32442 /* waveBPheart_1_ipad.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1382811F95E1DA009F33EC /* LaunchScreen.storyboard in Resources */,
+				2AA478801F98574100E32442 /* error.png in Resources */,
 				2A13827E1F95E1DA009F33EC /* Assets.xcassets in Resources */,
+				2AA4787E1F98574100E32442 /* success@2x.png in Resources */,
 				2A13827C1F95E1DA009F33EC /* Main.storyboard in Resources */,
-				2A13828F1F95E250009F33EC /* ZYDStatusBarHUD.bundle in Resources */,
+				2AA4787D1F98574100E32442 /* error@2x.png in Resources */,
+				2AA4787F1F98574100E32442 /* waveBPheart_1.png in Resources */,
+				2AA478811F98574100E32442 /* success.png in Resources */,
+				2AA478821F98574100E32442 /* waveBPheart_1_ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

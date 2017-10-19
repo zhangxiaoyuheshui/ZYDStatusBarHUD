@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZYDStatusBarHUD"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A smaple HUD"
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZYDStatusBarHUD", "ZYDStatusBarHUD/ZYDStatusBarHUD"
+  s.source_files  = "ZYDStatusBarHUD/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -103,8 +103,9 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  #s.resource  = "ZYDStatusBarHUD/ZYDStatusBarHUD/ZYDStatusBarHUD.bundle"
-  s.resources = "ZYDStatusBarHUD/Images/*.png"
+  # s.resource  = "ZYDStatusBarHUD/*.bundle"
+   s.resources = "ZYDStatusBarHUD/Images/*.png"
+
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 

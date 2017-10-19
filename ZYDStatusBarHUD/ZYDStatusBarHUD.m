@@ -89,7 +89,7 @@ static NSTimer *timer_;
 + (void)showSuccess:(NSString *)msg
 {
     NSLog(@"%@", NSTemporaryDirectory());
-    [self showMessage:msg image:[UIImage imageNamed:@"ZYDStatusBarHUD.bundle/success"]];
+    [self showMessage:msg image:[UIImage imageNamed:@"success"]];
 }
 
 /**
@@ -97,7 +97,7 @@ static NSTimer *timer_;
  */
 + (void)showError:(NSString *)msg
 {
-    [self showMessage:msg image:[UIImage imageNamed:@"ZYDStatusBarHUD.bundle/error"]];
+    [self showMessage:msg image:[UIImage imageNamed:@"error"]];
 }
 
 /**
