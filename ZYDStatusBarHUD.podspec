@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZYDStatusBarHUD"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A smaple HUD"
 
   # This description is used to generate tags and improve search results.
@@ -103,9 +103,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  #s.resource  = "ZYDStatusBarHUD/*.bundle"
-  s.resources = "ZYDStatusBarHUD/*.bundle"
-
+  #s.resource  = "ZYDStatusBarHUD/ZYDStatusBarHUD/ZYDStatusBarHUD.bundle"
+  s.resources = "ZYDStatusBarHUD/Images/*.png"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
